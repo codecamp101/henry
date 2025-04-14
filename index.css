@@ -139,13 +139,17 @@ output {
     height: 4em;
     width: 4em;
     border-radius: 8px;
-    margin:  57.8em auto;
-    display: block;
+    /* margin:  57.8em auto; */
+    /* display: block; */
     background-color: #333;
     border: 0;
    display: flex;
    align-items: center;
    justify-content: center;
+   position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
  }
  #start > div{
     height: 50%;
@@ -155,6 +159,9 @@ output {
  }
  #flag{
     background-image: url(nigerian_flag.png);
-    width: 4em;
-    height: 2em;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+    width: 2em;
+    height: 1em;
  }
