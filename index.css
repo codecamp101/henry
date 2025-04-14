@@ -41,7 +41,6 @@ body {
     
 }
 #user { 
-
     color:gold;
     /* font-family: system-ui; */
     /* border: 1px solid orange */
@@ -130,7 +129,15 @@ output {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* background-image: url(confetti.gif); */
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: top;
     /* border: 1px solid yellow; */
+    gap: 0.5em;
+}
+#panel.bgi {
+    background-image: url('confetti.gif');
 }
 #panel.on {
     opacity: 1;
@@ -165,3 +172,14 @@ output {
     width: 2em;
     height: 1em;
  }
+ #username {
+    /* border: 1px solid #fff; */
+    font-size: 150%;
+ }
+#age {
+font-size: 400%;
+margin: 2em 0;
+-webkit-text-fill-color: transparent;
+background-image: linear-gradient(to right, #e35 70%, #333 0%);
+background-clip: text;
+}
