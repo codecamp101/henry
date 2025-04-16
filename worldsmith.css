@@ -18,10 +18,9 @@
 }
 #body {
     height:100vh;
-    width: 100vh;
+    width: 100vw;
 }
-span{
-}
+
 #banner > p::first-letter {
 color: #e35;
 
@@ -89,6 +88,7 @@ border: 1px solid #03347511;
   align-items: center;
   padding: 1em;
   gap: 1em;
+  size: 150%;
  }
 button{
   background: none;
@@ -103,7 +103,8 @@ button{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1em;
+  gap: 1em 2em;
+  padding: 1em 2em;
 }
 #restartBtn{
   background-image: url(refresh-outline.svg);
@@ -123,29 +124,110 @@ button{
   border-radius: 2em;
   border: 1px solid red;
   letter-spacing: 1em;
+  margin-left: auto;
   
 }
 #checkBtn > i {
   height: 100%;
   width: 100%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   padding-left: 2em;
   background-image: url(arrow-forward-outline.svg);
-  background-size: 5%;
-  background-repeat: no-repeat;
-  background-position: center;
+
 }
 #checkBtn > span {
-color: #c03131;
+color: white;
 font-size: 110%;
 font-weight: 500;
+background-color: #6211a3;
+}
+#cup > i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 5px;
+  background-color: #033475;
+  color: #fff;
+  padding: .3em .5em;
 }
 #id > i {
   background-image: url(trophy-outline.svg);
-  background-size: 8rem;
+  background-size: 3.5rem;
   background-repeat: no-repeat;
   background-position: center;
-  width: 4rem;
-  height: 4rem;
-  border:1px solid red ;
+  width: 4em;
+  height: 4em;
+  /* border:1px solid red ; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#checkBtn > i, #restartBtn, #backward, #forward, #hintBtn, #bulb, #cup{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+}
+footer{
+  background-color: #f9f9f9;
+  position: sticky;
+  top: 100%;
+  padding: 2em;
+}
+/*responsive design*/
+@media (width <= 48opx){
+  .tile {
+    font-size: 100%;
+
+  }
+  #forward, #backward{
+    background-size: 30%;
+    height: 2em;
+    width: 2em;
+
+  }
+  #word{
+    position: static;
+
+  }
+  #backward {
+    left: 0;
+
+  }
+  #forward {
+    right: 0;
+
+  }
+  #txt {
+    font-size: 100%;
+  }
+  #action {
+    border: 1px solid red;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+  #restartBtn, #hintBtn, #cup{
+    background-size: 40%;
+    height: 3em;
+    width: 3em;
+
+  }
+  #cup > i {
+    font-size: 70%;
+
+  }
+  #checkBtn {
+    height: 2.5em;
+    width: 2.5em;
+
+  }
+  #checkBtn > span {
+    letter-spacing: 0;
+
+  }
+  #checkBtn {
+padding-left: 1em;
+    
+  }
 }

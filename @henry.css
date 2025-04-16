@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: grey;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: system-ui;
+    user-select: none;
+}
+#banner {
+    font-size: 400%;
+    font-weight: 550;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+    letter-spacing: -8px;
+    animation: blink 5s 5s infinite;
+  }
+@keyframes blink {
+0% {opacity: 1;}
+50% {opacity: 0;}
+100% {opacity: 1;}
+}
+#body {
+      height:100vh;
+      width: 100vh;
+  }
+  span{
+    color: #e37;
+  }
+  #banner > p::first-letter {
+  color: #e37;
+  
+  }
+  #word {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+    gap: 1rem;
+    position: relative;
+   
+  }
+  .chevron{
+    height: 5em;
+    width: 5em;
+    position: absolute;
+    translate: translateY(-50%);
+    border-radius: 7px;
+    box-shadow: .6s;
+  }
+  .chevron.hover{
+    box-shadow: 0px 3px 5px #383232;
+  }
+  #forward {
+    left: 4em;
+    background-image: url(chevron-back-outline.svg);
+    background-size: 1.5em;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+  }
+  #backward {
+    right: 4em;
+    background-image: url(chevron-forward-outline.svg);
+    background-size: 1.5em;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+  }
+  .tile {
+    font-weight: 700;
+    font-size: 400%;
+    border-radius: 7px;
+    padding: .5em;
+    font-family: monospace;
+    border: 1px solid #000d8511;
+    }
+    #bulb{
+        height: 3em;
+        width: 3em;
+        background-image: url(bulb-outline.svg);
+      }
+      #txt{
+        font-size: 180%;
+        font-weight:400 ;
+        font-family:monospace ;
+        background-image: url()
+      }
+      .hint{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+      }
+button{
+    background: 0;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  height: 4em;
+  width:4em;
+}
+#action{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.0em;
+  }
+  #restartBtn{
+    background-image: url(refresh-outline.svg);
+    height: 2.8em;
+    width: 2.8em;
+  }
+  #hintBtn{
+    background-image: url(help-circle-outline.svg);
+    height: 2.5em;
+    width: 2.5em;
+  }
