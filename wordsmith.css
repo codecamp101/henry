@@ -141,6 +141,9 @@ font-size: 110%;
 font-weight: 500;
 background-color: #6211a3;
 }
+#cup {
+  background-image: url(trophy-outline.svg);
+}
 #cup > i {
   position: absolute;
   top: 0;
@@ -149,18 +152,6 @@ background-color: #6211a3;
   background-color: #033475;
   color: #fff;
   padding: .3em .5em;
-}
-#id > i {
-  background-image: url(trophy-outline.svg);
-  background-size: 3.5rem;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 4em;
-  height: 4em;
-  /* border:1px solid red ; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 #checkBtn > i, #restartBtn, #backward, #forward, #hintBtn, #bulb, #cup{
   background-repeat: no-repeat;

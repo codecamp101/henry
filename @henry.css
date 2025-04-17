@@ -28,6 +28,7 @@
   }
   span{
     color: #e37;
+
   }
   #banner > p::first-letter {
   color: #e37;
@@ -86,7 +87,8 @@
         font-size: 180%;
         font-weight:400 ;
         font-family:monospace ;
-        background-image: url()
+        background-image: url();
+        color: #e37;
       }
       .hint{
         display: flex;
@@ -116,4 +118,43 @@ button{
     background-image: url(help-circle-outline.svg);
     height: 2.5em;
     width: 2.5em;
+  }
+  #checkBtn {
+    width: 8em;
+    background: none;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    background-color: purple;
+    border-radius: 2em;
+    padding-left: 1em;
+  }
+  #checkBtn > i {
+    height: 4em;
+    width: 4em;
+    padding-left: 2em;
+    background-image: url(arrow-forward-outline.svg);
+  }
+  #checkBtn > span {
+    color: white;
+  }
+  #cup {
+    background-repeat: no-repeat;
+    height: 3em;
+    width: 3em;
+    /* border: 1px solid red; */
+    background-image: url(trophy-outline.svg);
+    position: relative;
+
+  }
+  #cup > i {
+     position: absolute;
+     top: 0;
+     right: 0;
+     border-radius: 5px;
+     background-color: #033475;
+     color: #fff;
+     padding: .2em .4em;
+     /* border: 1px solid red; */
   }

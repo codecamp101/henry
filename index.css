@@ -135,6 +135,7 @@ output {
     background-position: top;
     /* border: 1px solid yellow; */
     gap: 0.5em;
+    position: relative;
 }
 #panel.bgi {
     background-image: url('confetti.gif');
@@ -182,4 +183,21 @@ margin: 2em 0;
 -webkit-text-fill-color: transparent;
 background-image: linear-gradient(to right, #e35 70%, #333 0%);
 background-clip: text;
+}
+#panel > a {
+text-decoration: none;
+color:#f3f3f3;
+/* border: 1px solid red; */
+padding: .5em;
+border-radius: 7px;
+position: absolute;
+bottom: 0;
+right: 0;
+margin: 1em;
+font-weight: 500;
+transition: background-color .3s;
+}
+#panel > a:hover {
+    background-color: #333;
+
 }
