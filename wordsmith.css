@@ -105,6 +105,7 @@ button{
   align-items: center;
   gap: 1em 2em;
   padding: 1em 2em;
+  
 }
 #restartBtn{
   background-image: url(refresh-outline.svg);

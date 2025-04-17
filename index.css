@@ -195,7 +195,7 @@ bottom: 0;
 right: 0;
 margin: 1em;
 font-weight: 500;
-transition: background-color .3s;
+transition: background-color .6s;
 }
 #panel > a:hover {
     background-color: #333;

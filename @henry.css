@@ -82,6 +82,7 @@
         height: 3em;
         width: 3em;
         background-image: url(bulb-outline.svg);
+        background-repeat: no-repeat;
       }
       #txt{
         font-size: 180%;
@@ -107,7 +108,12 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1.0em;
+    gap: 4em;
+    background-image: url(error_fawzi_mourad.gif);
+    background-repeat: no-repeat;
+    right: auto;
+    background-size: 20%;
+    background-position: right ;
   }
   #restartBtn{
     background-image: url(refresh-outline.svg);
@@ -116,8 +122,8 @@ button{
   }
   #hintBtn{
     background-image: url(help-circle-outline.svg);
-    height: 2.5em;
-    width: 2.5em;
+    height:3em;
+     width: 3em;
   }
   #checkBtn {
     width: 8em;
@@ -155,6 +161,7 @@ button{
      border-radius: 5px;
      background-color: #033475;
      color: #fff;
-     padding: .2em .4em;
+     padding: .0em .4em;
      /* border: 1px solid red; */
   }
+  
