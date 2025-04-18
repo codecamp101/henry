@@ -4,30 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WorldSmith</title>
-    <link rel="stylesheet" href="@henry.css">
+    <link rel="stylesheet" href="wordsmith.css">
 </head>
 <body>
-    <div id = 'banner'>
+    <svg style="display: none;">
+        <symbol id="icon" viewBox="0 0 24 24">
+          <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="currentColor"/>
+        </symbol>
+    </svg>
+    <div id='banner'>
        <p>Word</p> 
-       <p>Smith</p>   
+       <p>Smith</p> 
+       <div id="container"></div>  
     </div>
-    <div id = 'word'>
-        <button type="button" class="chevron" id="backward"></button>
+    <div id='word'>
+        <button type="button" class="chevron" id="backward" style="visibility: hidden;pointer-events: none;"></button>
         <button type="button" class="chevron" id="forward"></button>
-        <span class="tile">T</span>
-        <span class="tile">O</span>
-        <span class="tile">D</span>
-        <span class="tile">D</span>
-        <span class="tile">L</span>
-        <span class="tile">E</span>
     </div>
     <div class = 'hint'>
         <div id="bulb"></div>
-        <div id="txt">To walk unsteadly, as like a baby</div>
+        <div id="txt"></div>
     </div>
     <div id="action">
-        <button type="button" id="restartBtn" ></button>
-        <button type="button" id="hintBtn" ></button>
+        <button type="button" id="restartBtn"></button>
+        <button type="button" id="hintBtn"></button>
         <span id="cup">
             
             <i>0</i>
@@ -40,8 +40,18 @@
     <footer>
         <div id="author">&commat;HENx1324 | 2025</div>
     </footer>
-    
-
+    <div id="gameover" popover="manual">
+        <div id="wrap">
+            <div id="trophy"></div>
+            <div id="total_score"></div>
+            <div id="ascii">
+<!-- <pre>
+ | |
+.---.
+</pre> -->
+            </div>
+            <button type="button" id="x_close" popovertarget="gameover" popovertargetaction="hide"></button>
+        </div>
     </div>
     <script src="wordsmith.js"></script>
 </body>

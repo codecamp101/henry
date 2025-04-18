@@ -17,6 +17,43 @@
     letter-spacing: -8px;
     animation: blink 5s 5s infinite;
   }
+  #hi {
+    transform: rotateY('0deg');
+    animation: spin 14s linear infinite;
+  }
+  #he{
+    transform: rotateY('0deg');
+    animation: spin 12s linear infinite;
+  }
+  #me{
+    transform: rotateY('0deg');
+    animation: spin 10s linear infinite;
+    
+  }
+  #an{
+    transform: rotateY('0deg');
+    animation: spin 8s linear infinite;
+    
+  }
+  #uk{
+    transform: rotateY('0deg');
+    animation: spin 6s linear infinite;
+    
+  }
+  #us{
+    transform: rotateY('0deg');
+    animation: spin 4s linear infinite;
+
+  }
+   @keyframes spin {
+    0%, 50% {
+        transform: rotateY(0deg);
+    }
+    60%, 100%{
+        transform: rotateY(360deg);
+    }   
+    
+  }
 @keyframes blink {
 0% {opacity: 1;}
 50% {opacity: 0;}
@@ -33,6 +70,7 @@
   #banner > p::first-letter {
   color: #e37;
   
+  
   }
   #word {
     display: flex;
@@ -43,6 +81,7 @@
     position: relative;
    
   }
+
   .chevron{
     height: 5em;
     width: 5em;
@@ -77,6 +116,7 @@
     padding: .5em;
     font-family: monospace;
     border: 1px solid #000d8511;
+    
     }
     #bulb{
         height: 3em;
@@ -103,6 +143,7 @@ button{
   cursor: pointer;
   height: 4em;
   width:4em;
+  
 }
 #action{
     display: flex;
@@ -117,9 +158,11 @@ button{
   }
   #restartBtn{
     background-image: url(refresh-outline.svg);
-    height: 2.8em;
-    width: 2.8em;
+    height: 3em;
+    width: 3em;
+    animation: spin 4s 8s infinite;
   }
+  
   #hintBtn{
     background-image: url(help-circle-outline.svg);
     height:3em;
